@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 500px;
+        height: 300px;
+        background-color: #ccc;
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
+      .item {
+        height: 100px;
+        width: 250px;
+        background-color: #fa0;
+        color: #fff;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+      .i1 {
+        background-color: red;
+        flex-shrink: 1;
+      }
+      .i2 {
+        background-color: green;
+        flex-shrink: 2;
+      }
+      .i3 {
+        background-color: blue;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item i1">1中文</div>
+      <div class="item i2">2中文</div>
+      <div class="item i3">3中文</div>
+    </div>
+  </body>
+</html>

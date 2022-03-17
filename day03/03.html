@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 500px;
+        height: 500px;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row;
+        /* writing-mode: vertical-lr; */
+        /* justify-content: center; */
+        flex-wrap: wrap;
+        /* align-content: stretch; */
+        /* align-items: center; */
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: #fa0;
+        margin: 3px;
+        font-size: 20px;
+        color: #fff;
+      }
+      .item:first-child {
+        height: 170px;
+      }
+      /* .i1 {
+        order: 1;
+      } */
+      .i2 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item i1">1中文</div>
+      <div class="item i2">2中文</div>
+      <div class="item i3">3中文</div>
+      <div class="item i4">4中文</div>
+      <div class="item i5">5中文</div>
+      <div class="item">6中文</div>
+      <div class="item">7中文</div>
+      <div class="item">8中文</div>
+      <div class="item">9中文</div>
+    </div>
+  </body>
+</html>
