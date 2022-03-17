@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color: #ccc;
+            width: 960px;
+            display: flex; /*改變物件特性*/
+            flex-wrap: wrap; /*超過寬度他會換行*/
+        }
+        .item{
+            background-color: #fa0;
+            width: 280px;
+            font-size: 40px;
+            margin: 10px; /*指的是物件周圍向外要留的寬度*/
+            padding: 10px; /*物件內距*/
+            text-align: center; /*text-align是控制內容文字的水平排列方向 ceter代表文字水平置中*/
+        }
+        .item img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=10">
+            1</div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=11">
+            2</div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=12">
+            3</div>
+    </div>
+</body>
+</html>
