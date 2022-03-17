@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        margin: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: top;
+      }
+      @media screen and (min-width: 768px) {
+        .wrap {
+          display: flex;
+          width: 760px;
+          margin: auto;
+        }
+        .item {
+          width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+      </div>
+      <div class="item">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          dolorem cupiditate adipisci consequatur sint, culpa recusandae totam
+          ullam earum enim obcaecati ad, eum beatae eos officia labore natus
+          blanditiis exercitationem.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
