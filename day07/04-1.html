@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ccc;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        position: relative;
+      }
+      .logo {
+        width: 80px;
+        height: 40px;
+      }
+      .hb {
+        width: 40px;
+        height: 40px;
+        background-color: #f00;
+      }
+      #menu-switch {
+        display: none;
+      }
+      #menu-switch:checked ~ header nav {
+        display: block;
+      }
+
+      @media screen and (max-width: 767px) {
+        #menu-switch:checked ~ header nav {
+          display: block;
+        }
+        .hb {
+          position: relative;
+        }
+        #menu-switch:checked ~ header .hb {
+          background-color: #000;
+        }
+        .hb span {
+          width: 36px;
+          height: 4px;
+          background-color: #fff;
+          position: absolute;
+          left: 2px;
+        }
+        .hb span:nth-child(1) {
+          top: 8px;
+          transform: rotate(0deg);
+          transition: 0.5s 0.5s, transform 0.5s 0s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(1) {
+          top: 18px;
+          transform: rotate(45deg);
+          transition: 0.5s 0.3s, transform 0.5s 0.8s;
+        }
+        .hb span:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          opacity: 1;
+          transition: 0.3s 0.5s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(2) {
+          opacity: 0;
+          transition: 0.3s;
+        }
+        .hb span:nth-child(3) {
+          bottom: 8px;
+          transform: rotate(0deg);
+          transition: 0.5s 0.5s, transform 0.5s 0s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(3) {
+          bottom: 18px;
+          transform: rotate(-45deg);
+          transition: 0.5s 0.3s, transform 0.5s 0.8s;
+        }
+
+        nav {
+          width: 100%;
+          box-sizing: border-box;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #fa0;
+          display: none;
+        }
+        nav a {
+          display: block;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .hb {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="menu-switch" />
+    <header>
+      <div class="logo">
+        <img src="https://fakeimg.pl/80x40/200" />
+      </div>
+
+      <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+      doloremque quas accusantium consectetur sunt, voluptas voluptate, deserunt
+      molestiae expedita odit explicabo delectus minus molestias accusamus ex
+      unde voluptates officiis eum.
+    </p>
+    <p>
+      Quia dignissimos sint optio nihil officia perferendis obcaecati explicabo
+      impedit similique omnis commodi fuga facilis officiis saepe, dolore
+      quidem! Culpa totam in atque. Voluptatem natus sapiente alias minima
+      molestiae? Autem?
+    </p>
+    <p>
+      Recusandae facilis asperiores perspiciatis delectus dolores neque
+      necessitatibus assumenda. Ipsam corporis ducimus maiores iusto totam
+      nesciunt itaque, a esse sunt ratione libero facere minus! Sed sunt dolorum
+      itaque laborum doloremque.
+    </p>
+    <p>
+      Distinctio quibusdam, eos consequuntur sed dolore expedita repudiandae id
+      et eum impedit! Nisi exercitationem, corrupti, accusamus consequatur nihil
+      excepturi nostrum quis minima maxime sint alias aliquam! Ea velit debitis
+      fuga.
+    </p>
+    <p>
+      Officiis quos sapiente deleniti possimus, molestias voluptatem optio
+      consequatur repellendus dolore dolores. Eos dignissimos quaerat minima
+      perferendis debitis in vitae id quibusdam explicabo. Quasi, temporibus
+      minus ex odio incidunt ullam?
+    </p>
+    <p>
+      Nisi eaque quam quod, accusamus vero quia ipsam saepe vel! Eaque natus ex
+      dolore quia inventore minus est aliquid veritatis iure, ratione expedita
+      sint dicta deleniti voluptas commodi eius! Dicta?
+    </p>
+    <p>
+      Iusto quisquam voluptate aperiam voluptates a consequatur, nobis ex
+      tempora natus voluptas blanditiis minus impedit optio labore suscipit
+      autem aspernatur atque. Omnis sunt iste ex eos recusandae explicabo sint
+      pariatur!
+    </p>
+    <p>
+      Saepe in ex totam veniam maxime odio enim facilis minima, debitis
+      voluptate atque? Quidem vitae officia veritatis quia nemo consequatur
+      cupiditate animi voluptatem sequi nesciunt, at placeat culpa ad atque?
+    </p>
+    <p>
+      Temporibus, placeat impedit? Quisquam consequatur tempora necessitatibus
+      dignissimos numquam! Voluptates necessitatibus, itaque doloribus expedita
+      porro numquam libero laboriosam facilis in fuga pariatur cupiditate animi
+      laudantium delectus, perferendis debitis voluptatem quia?
+    </p>
+    <p>
+      At rem alias nulla ea natus fuga, eaque et minima autem molestias sit
+      cumque consectetur dolor incidunt sapiente ut vel mollitia rerum sed qui
+      quia vero modi recusandae molestiae! Sequi?
+    </p>
+  </body>
+</html>
